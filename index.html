@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <style>
+        body { font-family: 'Inter', sans-serif; }
+        html { scroll-behavior: smooth; }
+    </style>
+    <link rel="shortcut icon" href="/img/books.svg" type="image/x-icon">
+    <script>
+        $(document).ready(function () {
+            $('a[href="#contato"]').on('click', function (e) {
+                e.preventDefault();
+                $('html, body').animate({
+                    scrollTop: $('#contato').offset().top
+                }, 800);
+            });
+        });
+    </script>
+    <title>Aulas Particulares - João Pedro</title>
+</head>
+<body class="bg-gray-900 text-white">
+    <header class="flex flex-col items-center justify-center h-screen text-center px-6 bg-gradient-to-r from-blue-500 to-purple-600 rounded-b-xl shadow-xl">
+        <h1 class="text-5xl font-extrabold text-white drop-shadow-lg">Aulas Particulares</h1>
+        <p class="text-xl mt-4 text-gray-200 drop-shadow-lg">para alunos do ensino fundamental</p>
+        <a href="#contato" class="mt-6 px-8 py-4 bg-gradient-to-r from-green-400 to-teal-500 text-white font-medium rounded-full hover:bg-green-600 transition-transform transform hover:scale-105 shadow-lg">Agende sua Aula</a>
+    </header>
+
+    <div class="teste">
+        
+    </div>
+
+    <section class="max-w-4xl mx-auto py-10 px-6 text-center bg-gray-800 rounded-xl shadow-lg mt-24">
+        <p class="text-2xl">Sou um professor com experiência em competições acadêmicas, tendo participado de diversas olimpíadas e provas militares, como:</p>
+        <ul class="mt-6 text-left text-xl text-gray-400 space-y-4">
+            <li>OBMEP (Olimpíada Brasileira de Matemática das Escolas Públicas)</li>
+            <li>OBA (Olimpíada Brasileira de Astronomia e Astronáutica)</li>
+            <li>OBF (Olimpíada Brasileira de Física)</li>
+            <li>ITA (Instituto Tecnológico de Aeronáutica)</li>
+            <li>IME (Instituto Militar de Engenharia)</li>
+            <li>EsPCEx (Escola Preparatória de Cadetes do Exército)</li>
+        </ul>
+    </section>
+
+    <section class="max-w-4xl mx-auto py-16 px-6 text-center bg-gray-800 rounded-xl shadow-lg mt-12">
+        <h2 class="text-3xl font-bold text-white">Disciplinas Disponíveis</h2>
+        <div class="grid grid-cols-2 md:grid-cols-3 gap-6 mt-8">
+            <div class="bg-gray-700 p-6 rounded-xl shadow-lg transition-transform transform hover:scale-105">Matemática</div>
+            <div class="bg-gray-700 p-6 rounded-xl shadow-lg transition-transform transform hover:scale-105">Física</div>
+            <div class="bg-gray-700 p-6 rounded-xl shadow-lg transition-transform transform hover:scale-105">Química</div>
+            <div class="bg-gray-700 p-6 rounded-xl shadow-lg transition-transform transform hover:scale-105">Ciências</div>
+            <div class="bg-gray-700 p-6 rounded-xl shadow-lg transition-transform transform hover:scale-105">Filosofia</div>
+            <div class="bg-gray-700 p-6 rounded-xl shadow-lg transition-transform transform hover:scale-105">Sociologia</div>
+        </div>
+    </section>
+
+    <section id="sobre-aulas" class="max-w-4xl mx-auto py-16 px-6 text-center bg-gray-800 rounded-xl shadow-lg mt-12">
+        <h2 class="text-3xl font-bold text-white">Sobre as Aulas</h2>
+        <p class="text-gray-400 mt-4">Minhas aulas são totalmente personalizadas de acordo com a sua necessidade. Antes de cada encontro, eu peço um prazo de 2 dias para preparar o material da aula. Isso me permite analisar suas dificuldades e criar um conteúdo que faça sentido pra você, garantindo que a aula seja mais eficiente e direcionada aos pontos em que você precisa de mais atenção. O objetivo é sempre transformar o aprendizado em algo mais fluido e menos cansativo.</p>
+        <p class="text-gray-400 mt-4">As aulas podem ser feitas de forma online ou presencial, e meu foco é sempre garantir que você entenda completamente o conteúdo e se sinta confortável para tirar todas as suas dúvidas.</p>
+    
+            <div class="bg-gray-700 p-6 rounded-xl shadow-lg mt-8">
+            <p class="text-yellow-300 text-lg">🔔 E aí, que tal aproveitar uma aula experimental gratuita? Uma ótima oportunidade para conhecer o método e ver como posso te ajudar! Me chama pra agendar a sua aula.</p>
+        </div>
+    </section>
+    
+
+    <section id="contato" class="max-w-4xl mx-auto py-16 px-6 text-center bg-gray-800 rounded-xl shadow-lg mt-12">
+        <h2 class="text-3xl font-bold text-white">Entre em Contato</h2>
+        <p class="text-gray-400 mt-4">Tem alguma dúvida ou quer agendar sua aula? Me chama no WhatsApp ou manda um e-mail! Vamos marcar a melhor data para você.</p>
+        
+        <div class="flex justify-center gap-10 mt-8">
+            <a href="https://api.whatsapp.com/send?phone=5547999783190&text=Olá,%20gostaria%20de%20saber%20mais%20sobre%20as%20aulas%20particulares!" target="_blank" class="flex items-center space-x-2 hover:scale-105 transition-transform">
+                <img src="https://img.shields.io/badge/WhatsApp-25D366?style=for-the-badge&logo=whatsapp&logoColor=white" alt="WhatsApp" class="h-12">
+            </a>
+
+            <a href="mailto:servicecontact.joao@gmail.com?subject=Aulas%20Particulares&body=Olá,%20gostaria%20de%20saber%20mais%20sobre%20as%20aulas%20particulares." target="_blank" class="flex items-center space-x-2 hover:scale-105 transition-transform">
+                <img src="https://img.shields.io/badge/-Gmail-%23333?style=for-the-badge&logo=gmail&logoColor=white" alt="Gmail" class="h-12">
+            </a>
+        </div>
+    </section>
+
+    <footer class="text-center py-6 text-gray-500 bg-gray-900 mt-12 rounded-b-xl">
+        <p>&copy; 2025 João Pedro - Todos os direitos reservados</p>
+    </footer>
+
+</body>
+</html>
